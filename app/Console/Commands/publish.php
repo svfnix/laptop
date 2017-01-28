@@ -65,13 +65,13 @@ class publish extends Command
 
                 $telegram->sendMessage([
                     'chat_id' => "-1001103329085",
-                    'text' => $item['_source']['DetailSource']
+                    'text' =>
                 ]);
 
                 $telegram->sendPhoto([
                     'chat_id' => "-1001103329085",
-                    'photo' => str_replace(' ', '%20', "http://file.digikala.com/digikala/Image/Webstore/Product/P_105348/350/Apple-MacBook-Pro-with-Retina-Display-15- MJLU25ad3a6.jpg"),
-                    'caption' => "asdf"
+                    'photo' => str_replace(' ', '%20', "http://file.digikala.com/digikala/{$item['_source']['ImagePath']}"),
+                    'caption' => strip_tags($item['_source']['DetailSource'])
                 ]);
 
                 die();
