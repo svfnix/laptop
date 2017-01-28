@@ -6,7 +6,9 @@ use Carbon\Carbon;
 use Goutte\Client;
 use Illuminate\Console\Command;
 use Illuminate\Support\Facades\Storage;
+use Symfony\Component\DomCrawler\Crawler;
 use Telegram\Bot\Api;
+use Telegram\Bot\HttpClients\GuzzleHttpClient;
 
 class publish extends Command
 {
@@ -33,6 +35,71 @@ class publish extends Command
         parent::__construct();
     }
 
+    function icon($text){
+
+        if(strpos($text, 'مشخصات فیزیکی') !== false){
+            return '💻';
+        }
+
+        if(strpos($text, 'پردازنده مرکزی') !== false){
+            return '🎛';
+        }
+
+        if(strpos($text, 'حافظه RAM') !== false){
+            return '®';
+        }
+
+        if(strpos($text, 'حافظه داخلی') !== false){
+            return '💾';
+        }
+
+        if(strpos($text, 'پردازنده گرافیکی') !== false){
+            return '👁‍🗨';
+        }
+
+        if(strpos($text, 'صفحه نمایش') !== false){
+            return '🖥';
+        }
+
+        if(strpos($text, 'امکانات') !== false){
+            return '🕹';
+        }
+
+        if(strpos($text, 'سایر مشخصات') !== true){
+            return '⚙';
+        }
+
+    }
+
+    function extract_message($item){
+
+        $crawler = new Crawler($item['_source']['DetailSource']);
+
+        $data = [];
+        $list = $crawler->filter('span');
+        foreach($list as $span){
+            $data[]= trim($span->textContent);
+        };
+
+        $list = [];
+        while($key = array_shift($data)){
+            $list[$key] = array_shift($data);
+        }
+
+        $return = ['<strong>' . html_entity_decode($item['_source']['FaTitle']) . '</strong>', ''];
+        foreach ($list as $key => $val){
+            $return[] = $this->icon($key) . " {$key} :\n {$val}\n";
+        }
+
+        $return[] = '<strong>📈 قیمت ' . number_format($item['_source']['MinPriceList'] / 10) . ' تومان</strong>';
+        $return[] = '--------------';
+        $return[] = 'دریافت قیمت بروز لپتاپ 👈';
+        $return[] = '';
+        $return[] = '✅ https://t.me/joinchat/AAAAAEHDdz0C6TZ3Zcqegg';
+
+        return implode("\n", $return);
+    }
+
     /**
      * Execute the console command.
      *
@@ -50,8 +117,7 @@ class publish extends Command
             'msi' => 95,
             'vio' => 188,
             'microsoft' => 51,
-            'dell' => 2,
-            'sony' => 1,
+            'dell' => 2
         ];
 
         $telegram = new Api();
@@ -59,14 +125,25 @@ class publish extends Command
         foreach ($brands as $brand => $code) {
 
             $list = file_get_contents("https://search.digikala.com/api/search/?category=c18&brand={$code}&pageSize=48&sortBy=10&status=2");
+            $list = mb_convert_encoding($list, 'HTML-ENTITIES', "UTF-8");
             $list = json_decode($list, 1);
 
+            $logo_sent = false;
             foreach ($list['hits']['hits'] as $item) {
 
-                $telegram->sendPhoto([
+                if(!$logo_sent){
+                    $telegram->sendPhoto([
+                        'chat_id' => "-1001103329085",
+                        'photo' => "http://136.243.158.61/brands/{$brand}.png",
+                        'caption' => "💻لیست قیمت لپتاپ های برند {$brand}"
+                    ]);
+                    $logo_sent = true;
+                }
+
+                $telegram->sendMessage([
                     'chat_id' => "-1001103329085",
-                    'photo' => str_replace(' ', '%20', "http://file.digikala.com/digikala/{$item['_source']['ImagePath']}"),
-                    'caption' => strip_tags($item['_source']['DetailSource'])
+                    'text' => $this->extract_message($item),
+                    'parse_mode' => 'HTML'
                 ]);
 
                 die();
@@ -78,7 +155,9 @@ class publish extends Command
 
 
 
-       /* $counter = 0;
+       /*
+       ['_source']['DetailSource']
+       $counter = 0;
         $lastvideos = cache('lastvideos', []);
         $new_videos = [];
 
