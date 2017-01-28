@@ -63,11 +63,6 @@ class publish extends Command
 
             foreach ($list['hits']['hits'] as $item) {
 
-                $telegram->sendMessage([
-                    'chat_id' => "-1001103329085",
-                    'text' =>
-                ]);
-
                 $telegram->sendPhoto([
                     'chat_id' => "-1001103329085",
                     'photo' => str_replace(' ', '%20', "http://file.digikala.com/digikala/{$item['_source']['ImagePath']}"),
