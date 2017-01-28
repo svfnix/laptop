@@ -141,7 +141,7 @@ class publish extends Command
                         $telegram->sendPhoto([
                             'chat_id' => "-1001103329085",
                             'photo' => "http://136.243.158.61/brands/{$brand}.png",
-                            'caption' => "💻لیست قیمت لپتاپ های برند {$brand}"
+                            'caption' => "💻 {$brand}"
                         ]);
                         $logo_sent = true;
                     }
