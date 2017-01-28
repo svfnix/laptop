@@ -152,10 +152,11 @@ class publish extends Command
                         'parse_mode' => 'HTML'
                     ]);
 
-                    sleep(5);
+                    sleep(30);
                 }
 
             }
         }
     }
 }
+
