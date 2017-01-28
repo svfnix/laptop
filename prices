@@ -1,0 +1,427 @@
+stdClass Object
+(
+    [took] => 5
+    [timed_out] => 
+    [_shards] => stdClass Object
+        (
+            [total] => 1
+            [successful] => 1
+            [failed] => 0
+        )
+
+    [hits] => stdClass Object
+        (
+            [total] => 4
+            [max_score] => 
+            [hits] => Array
+                (
+                    [0] => stdClass Object
+                        (
+                            [_index] => ecs_20161029_184125
+                            [_type] => product
+                            [_id] => 105348
+                            [_score] => 
+                            [_source] => stdClass Object
+                                (
+                                    [LikeCounter] => 0
+                                    [CategoryId] => 18
+                                    [ProductTypes] => T4 
+                                    [ProductAttributes] => A303V432 A308V472 A310V490 A316V515 A317V527 A321V549 A351V603 A14251V14733 A14251V14732 
+                                    [IsActive] => 1
+                                    [AnnounceDate] => 2079-01-01T00:00:00
+                                    [ReducedPrice] => 0
+                                    [BrandId] => 10
+                                    [MinPrice] => 108890000
+                                    [UserRating] => 88
+                                    [UrlCode] => Apple-MacBook-Pro-with-Retina-Display-15- MJLU2
+                                    [LastPeriodViewCounter] => 2225
+                                    [IsSpecialOffer] => 
+                                    [ProductCategories] =>  C7063 C18 C3 C5966 C7967
+                                    [RegDateTime] => 2015-10-28T11:20:21.86
+                                    [EStatus] => 2
+                                    [ImagePath] => Image/Webstore/Product/P_105348/Original/Apple-MacBook-Pro-with-Retina-Display-15- MJLU25ad3a6.jpg
+                                    [ViewCounter] => 26748
+                                    [HasVideo] => 
+                                    [EnTitle] => Apple MacBook Pro MJLU2 with Retina Display - 15 inch Laptop
+                                    [OtherTitle] => ئشزذخخن حقخ قثفهدش 15 اينچ hdk] l; f,; \v, vjdkh رتينا مکبوک mocbook , ئلطل2 - ئتمض2، مک بوک پورو پانزده اينچي رتيناي ئتمض MJLU2 2
+                                    [ProductColorList] => Array
+                                        (
+                                            [0] => stdClass Object
+                                                (
+                                                    [ColorTitle] => نقره اي
+                                                    [ColorHex] => #C0C0C0
+                                                    [ProductId] => 105348
+                                                    [ColorCode] => Silver
+                                                    [ColorId] => 12
+                                                )
+
+                                        )
+
+                                    [ShowType] => 2
+                                    [Rate] => 68
+                                    [ExistStatus] => 2
+                                    [LastPeriodLikeCounter] => 0
+                                    [ProductColors] => C12 
+                                    [MinPriceList] => 109890000
+                                    [FavoriteCounter] => 0
+                                    [FaTitle] => لپ تاپ 15 اينچي اپل مدل  MacBook Pro MJLU2 با صفحه نمايش رتينا
+                                    [LastPeriodFavoriteCounter] => 0
+                                    [HasGift] => 
+                                    [Id] => 105348
+                                    [MaxPrice] => 108890000
+                                    [LastPeriodSaleCounter] => 1
+                                    [DetailSource] => 
+                    <li>
+                        <span class="products-soon-attributes-title">مشخصات فیزیکی <i class="icon icon-caret-left"></i></span>
+                        <span class="products-soon-attributes-value"> ابعاد:  18 × 247 × 359   میلی‌متر - وزن:  2.04  کیلوگرم</span>
+                    </li>
+                    <li>
+                        <span class="products-soon-attributes-title">پردازنده مرکزی <i class="icon icon-caret-left"></i></span>
+                        <span class="products-soon-attributes-value">Intel Core i7 Haswell 2.80GHz up to 4.00 GHz</span>
+                    </li>
+                    <li>
+                        <span class="products-soon-attributes-title">حافظه RAM <i class="icon icon-caret-left"></i></span>
+                        <span class="products-soon-attributes-value"> ظرفیت:  16 گيگابايت  - نوع:  DDR3 </span>
+                    </li>
+                    <li>
+                        <span class="products-soon-attributes-title">حافظه داخلی <i class="icon icon-caret-left"></i></span>
+                        <span class="products-soon-attributes-value"> ظرفیت:  يک ترابايت  - نوع:  SSD  - مشخصات:  Flash Storage </span>
+                    </li>
+                    <li>
+                        <span class="products-soon-attributes-title">پردازنده گرافیکی <i class="icon icon-caret-left"></i></span>
+                        <span class="products-soon-attributes-value">AMD Radeon R9 M370X GDDR5 2GB </span>
+                    </li>
+                    <li>
+                        <span class="products-soon-attributes-title">صفحه نمایش <i class="icon icon-caret-left"></i></span>
+                        <span class="products-soon-attributes-value">15.6 اينچ  از نوع  IPS LCD  با دقت  2880x1800 </span>
+                    </li>
+                    <li>
+                        <span class="products-soon-attributes-title">امکانات <i class="icon icon-caret-left"></i></span>
+                        <span class="products-soon-attributes-value">فاقد درايو نوري Webcam Backlit Keyboard Card Reader Wi-Fi HDMI Port Thunderbolt Port </span>
+                    </li>
+                    <li>
+                        <span class="products-soon-attributes-title">سایر مشخصات <i class="icon icon-caret-left"></i></span>
+                        <span class="products-soon-attributes-value">- باتری  6 سلولي - Apple Mac OS </span>
+                    </li>
+                                )
+
+                            [sort] => Array
+                                (
+                                    [0] => 2
+                                    [1] => 108890000
+                                    [2] => 2225
+                                )
+
+                        )
+
+                    [1] => stdClass Object
+                        (
+                            [_index] => ecs_20161029_184125
+                            [_type] => product
+                            [_id] => 202274
+                            [_score] => 
+                            [_source] => stdClass Object
+                                (
+                                    [LikeCounter] => 0
+                                    [CategoryId] => 18
+                                    [ProductTypes] => T2 T4 
+                                    [ProductAttributes] => A303V432 A308V472 A310V483 A316V514 A317V527 A321V549 A351V603 A14251V14732 A14251V14733 
+                                    [IsActive] => 1
+                                    [AnnounceDate] => 2079-01-01T00:00:00
+                                    [ReducedPrice] => 0
+                                    [BrandId] => 10
+                                    [MinPrice] => 107750000
+                                    [UserRating] => 25
+                                    [UrlCode] => Apple-MacBook-Pro-MLH32-With-Touch-Bar-15-Inch
+                                    [LastPeriodViewCounter] => 3195
+                                    [IsSpecialOffer] => 
+                                    [ProductCategories] =>  C18 C7063 C7967 C3 C5966
+                                    [RegDateTime] => 2017-01-17T13:22:18.553
+                                    [EStatus] => 2
+                                    [ImagePath] => Image/Webstore/Product/P_202274/Original/Apple-MacBook-Pro-MLH32-with-Touch-Bar--15-inch-Laptop-387717.jpg
+                                    [ViewCounter] => 5259
+                                    [HasVideo] => 
+                                    [EnTitle] => Apple MacBook Pro MLH32 with Touch Bar- 15 inch Laptop
+                                    [OtherTitle] => rayan3,ئشزذخخن حقخ قثفهدش 15 اينچ hdk] l; f,; \v, vjdkh مکبوک mocbook , ئلطل2 - ئتمض2، مک بوک پورو سيزده اينچي تاچ بار ، macbook 15 inch with touch bar، مک بوک 15 اينچي	
+                                    [ProductColorList] => Array
+                                        (
+                                            [0] => stdClass Object
+                                                (
+                                                    [ColorTitle] => نقره اي
+                                                    [ColorHex] => #C0C0C0
+                                                    [ProductId] => 202274
+                                                    [ColorCode] => Silver
+                                                    [ColorId] => 12
+                                                )
+
+                                            [1] => stdClass Object
+                                                (
+                                                    [ColorTitle] => نوک مدادي
+                                                    [ColorHex] => #696969
+                                                    [ProductId] => 202274
+                                                    [ColorCode] => DimGray
+                                                    [ColorId] => 13
+                                                )
+
+                                        )
+
+                                    [ShowType] => 2
+                                    [Rate] => 58
+                                    [ExistStatus] => 2
+                                    [LastPeriodLikeCounter] => 0
+                                    [ProductColors] => C12 C13 
+                                    [MinPriceList] => 107750000
+                                    [FavoriteCounter] => 0
+                                    [FaTitle] => لپ تاپ 15 اينچي اپل مدل MacBook Pro MLH32 همراه با تاچ بار
+                                    [LastPeriodFavoriteCounter] => 0
+                                    [HasGift] => 
+                                    [Id] => 202274
+                                    [MaxPrice] => 107750000
+                                    [LastPeriodSaleCounter] => 0
+                                    [DetailSource] => 
+                    <li>
+                        <span class="products-soon-attributes-title">مشخصات فیزیکی <i class="icon icon-caret-left"></i></span>
+                        <span class="products-soon-attributes-value"> ابعاد:  15.5 × 240.7 × 349.3  میلی‌متر - وزن:  1.83  کیلوگرم</span>
+                    </li>
+                    <li>
+                        <span class="products-soon-attributes-title">پردازنده مرکزی <i class="icon icon-caret-left"></i></span>
+                        <span class="products-soon-attributes-value">Intel Core i7 Quad-Core 2.6GHz up to 3.5 GHz</span>
+                    </li>
+                    <li>
+                        <span class="products-soon-attributes-title">حافظه RAM <i class="icon icon-caret-left"></i></span>
+                        <span class="products-soon-attributes-value"> ظرفیت:  16 گيگابايت  - نوع:  DDR3 </span>
+                    </li>
+                    <li>
+                        <span class="products-soon-attributes-title">حافظه داخلی <i class="icon icon-caret-left"></i></span>
+                        <span class="products-soon-attributes-value"> ظرفیت:  256 گيگابايت  - نوع:  SSD  - مشخصات:  حافظه onboard SSD از نوع PCIe </span>
+                    </li>
+                    <li>
+                        <span class="products-soon-attributes-title">پردازنده گرافیکی <i class="icon icon-caret-left"></i></span>
+                        <span class="products-soon-attributes-value">AMD AMD Radeon Pro 450 2GB </span>
+                    </li>
+                    <li>
+                        <span class="products-soon-attributes-title">صفحه نمایش <i class="icon icon-caret-left"></i></span>
+                        <span class="products-soon-attributes-value">15.4 اينچ  از نوع  IPS LCD  با دقت  2880x1800 </span>
+                    </li>
+                    <li>
+                        <span class="products-soon-attributes-title">امکانات <i class="icon icon-caret-left"></i></span>
+                        <span class="products-soon-attributes-value">فاقد درايو نوري Webcam Backlit Keyboard Fingerprint Scanner Wi-Fi  - دارای پورت Type USB-C Thunderbolt Port </span>
+                    </li>
+                    <li>
+                        <span class="products-soon-attributes-title">سایر مشخصات <i class="icon icon-caret-left"></i></span>
+                        <span class="products-soon-attributes-value">- Apple Mac OS </span>
+                    </li>
+                                )
+
+                            [sort] => Array
+                                (
+                                    [0] => 2
+                                    [1] => 107750000
+                                    [2] => 3195
+                                )
+
+                        )
+
+                    [2] => stdClass Object
+                        (
+                            [_index] => ecs_20161029_184125
+                            [_type] => product
+                            [_id] => 149296
+                            [_score] => 
+                            [_source] => stdClass Object
+                                (
+                                    [LikeCounter] => 0
+                                    [CategoryId] => 18
+                                    [ProductTypes] => T2 
+                                    [ProductAttributes] => A303V433 A308V471 A310V483 A316V511 A317V527 A321V541 A351V603 A14251V14732 A14251V14733 
+                                    [IsActive] => 1
+                                    [AnnounceDate] => 2079-01-01T00:00:00
+                                    [ReducedPrice] => 0
+                                    [BrandId] => 10
+                                    [MinPrice] => 47390000
+                                    [UserRating] => 34
+                                    [UrlCode] => Notebook-Apple-MacBook-Air-MMGG2
+                                    [LastPeriodViewCounter] => 1930
+                                    [IsSpecialOffer] => 
+                                    [ProductCategories] =>  C7063 C18 C3 C5966 C7967
+                                    [RegDateTime] => 2016-06-11T16:32:35.257
+                                    [EStatus] => 2
+                                    [ImagePath] => Image/Webstore/Product/P_149296/Original/Notebook-Apple-MacBook-Air-MMGG2.jpg
+                                    [ViewCounter] => 14510
+                                    [HasVideo] => 
+                                    [EnTitle] => Apple MacBook Air MMGG2 2016 - 13 inch Laptop
+                                    [OtherTitle] => rayan3,ئشزذخخن 2016 mmgg2، مکبوک اير 2016، ئشزذخخن شهق mmgg2 2016
+                                    [ProductColorList] => Array
+                                        (
+                                            [0] => stdClass Object
+                                                (
+                                                    [ColorTitle] => نقره اي
+                                                    [ColorHex] => #C0C0C0
+                                                    [ProductId] => 149296
+                                                    [ColorCode] => Silver
+                                                    [ColorId] => 12
+                                                )
+
+                                        )
+
+                                    [ShowType] => 2
+                                    [Rate] => 71
+                                    [ExistStatus] => 2
+                                    [LastPeriodLikeCounter] => 0
+                                    [ProductColors] => C12 
+                                    [MinPriceList] => 47900000
+                                    [FavoriteCounter] => 0
+                                    [FaTitle] => لپ تاپ 13 اينچي اپل مدل MacBook Air MMGG2 2016
+                                    [LastPeriodFavoriteCounter] => 0
+                                    [HasGift] => 
+                                    [Id] => 149296
+                                    [MaxPrice] => 47390000
+                                    [LastPeriodSaleCounter] => 3
+                                    [DetailSource] => 
+                    <li>
+                        <span class="products-soon-attributes-title">مشخصات فیزیکی <i class="icon icon-caret-left"></i></span>
+                        <span class="products-soon-attributes-value"> ابعاد:  17 × 227 × 325  میلی‌متر - وزن:  1.35  کیلوگرم</span>
+                    </li>
+                    <li>
+                        <span class="products-soon-attributes-title">پردازنده مرکزی <i class="icon icon-caret-left"></i></span>
+                        <span class="products-soon-attributes-value">Intel Core i5 5th Generation - Broadwell 1.6GHz up to 2.7 GHz</span>
+                    </li>
+                    <li>
+                        <span class="products-soon-attributes-title">حافظه RAM <i class="icon icon-caret-left"></i></span>
+                        <span class="products-soon-attributes-value"> ظرفیت:  8 گيگابايت  - نوع:  DDR3 </span>
+                    </li>
+                    <li>
+                        <span class="products-soon-attributes-title">حافظه داخلی <i class="icon icon-caret-left"></i></span>
+                        <span class="products-soon-attributes-value"> ظرفیت:  256 گيگابايت  - نوع:  SSD  - مشخصات:  حافظه خشک SSD </span>
+                    </li>
+                    <li>
+                        <span class="products-soon-attributes-title">پردازنده گرافیکی <i class="icon icon-caret-left"></i></span>
+                        <span class="products-soon-attributes-value">Intel HD Graphics 6000 بدون حافظه‌ي گرافيکي مجزا </span>
+                    </li>
+                    <li>
+                        <span class="products-soon-attributes-title">صفحه نمایش <i class="icon icon-caret-left"></i></span>
+                        <span class="products-soon-attributes-value">13 اينچ  از نوع  TFT LED-backlit LCD  با دقت  1440x900 </span>
+                    </li>
+                    <li>
+                        <span class="products-soon-attributes-title">امکانات <i class="icon icon-caret-left"></i></span>
+                        <span class="products-soon-attributes-value">فاقد درايو نوري Webcam Backlit Keyboard Card Reader Wi-Fi Thunderbolt Port </span>
+                    </li>
+                    <li>
+                        <span class="products-soon-attributes-title">سایر مشخصات <i class="icon icon-caret-left"></i></span>
+                        <span class="products-soon-attributes-value">- باتری  6 سلولي - Apple Mac OS </span>
+                    </li>
+                                )
+
+                            [sort] => Array
+                                (
+                                    [0] => 2
+                                    [1] => 47390000
+                                    [2] => 1930
+                                )
+
+                        )
+
+                    [3] => stdClass Object
+                        (
+                            [_index] => ecs_20161029_184125
+                            [_type] => product
+                            [_id] => 149283
+                            [_score] => 
+                            [_source] => stdClass Object
+                                (
+                                    [LikeCounter] => 0
+                                    [CategoryId] => 18
+                                    [ProductTypes] => T2 
+                                    [ProductAttributes] => A303V433 A308V471 A310V479 A316V511 A317V527 A321V541 A351V603 A14251V14732 A14251V14733 
+                                    [IsActive] => 1
+                                    [AnnounceDate] => 2079-01-01T00:00:00
+                                    [ReducedPrice] => 0
+                                    [BrandId] => 10
+                                    [MinPrice] => 41450000
+                                    [UserRating] => 54
+                                    [UrlCode] => Notebook-Apple-MacBook-Air-MMGF2
+                                    [LastPeriodViewCounter] => 2587
+                                    [IsSpecialOffer] => 
+                                    [ProductCategories] =>  C7063 C18 C3 C5966 C7967
+                                    [RegDateTime] => 2016-06-11T16:21:02.323
+                                    [EStatus] => 2
+                                    [ImagePath] => Image/Webstore/Product/P_149283/Original/Notebook-Apple-MacBook-Air-MMGF2.jpg
+                                    [ViewCounter] => 22494
+                                    [HasVideo] => 
+                                    [EnTitle] => Apple MacBook Air MMGF2 2016 - 13 inch Laptop
+                                    [OtherTitle] => rayan3,rayanpromotion,ئشزذخخن 2016 mmgf2، مکبوک اير 2016، ئشزذخخن شهق mmgf2 2016
+                                    [ProductColorList] => Array
+                                        (
+                                            [0] => stdClass Object
+                                                (
+                                                    [ColorTitle] => نقره اي
+                                                    [ColorHex] => #C0C0C0
+                                                    [ProductId] => 149283
+                                                    [ColorCode] => Silver
+                                                    [ColorId] => 12
+                                                )
+
+                                        )
+
+                                    [ShowType] => 2
+                                    [Rate] => 77
+                                    [ExistStatus] => 2
+                                    [LastPeriodLikeCounter] => 0
+                                    [ProductColors] => C12 
+                                    [MinPriceList] => 41950000
+                                    [FavoriteCounter] => 0
+                                    [FaTitle] => لپ تاپ 13 اينچي اپل مدل MacBook Air MMGF2 2016
+                                    [LastPeriodFavoriteCounter] => 0
+                                    [HasGift] => 
+                                    [Id] => 149283
+                                    [MaxPrice] => 41450000
+                                    [LastPeriodSaleCounter] => 3
+                                    [DetailSource] => 
+                    <li>
+                        <span class="products-soon-attributes-title">مشخصات فیزیکی <i class="icon icon-caret-left"></i></span>
+                        <span class="products-soon-attributes-value"> ابعاد:  17 × 227 × 325  میلی‌متر - وزن:  1.35  کیلوگرم</span>
+                    </li>
+                    <li>
+                        <span class="products-soon-attributes-title">پردازنده مرکزی <i class="icon icon-caret-left"></i></span>
+                        <span class="products-soon-attributes-value">Intel Core i5 5th Generation - Broadwell 1.6GHz up to 2.7 GHz</span>
+                    </li>
+                    <li>
+                        <span class="products-soon-attributes-title">حافظه RAM <i class="icon icon-caret-left"></i></span>
+                        <span class="products-soon-attributes-value"> ظرفیت:  8 گيگابايت  - نوع:  DDR3 </span>
+                    </li>
+                    <li>
+                        <span class="products-soon-attributes-title">حافظه داخلی <i class="icon icon-caret-left"></i></span>
+                        <span class="products-soon-attributes-value"> ظرفیت:  128 گيگابايت  - نوع:  SSD  - مشخصات:  حافظه خشک SSD </span>
+                    </li>
+                    <li>
+                        <span class="products-soon-attributes-title">پردازنده گرافیکی <i class="icon icon-caret-left"></i></span>
+                        <span class="products-soon-attributes-value">Intel HD Graphics 6000 بدون حافظه‌ي گرافيکي مجزا </span>
+                    </li>
+                    <li>
+                        <span class="products-soon-attributes-title">صفحه نمایش <i class="icon icon-caret-left"></i></span>
+                        <span class="products-soon-attributes-value">13 اينچ  از نوع  TFT LED-backlit LCD  با دقت  1440x900 </span>
+                    </li>
+                    <li>
+                        <span class="products-soon-attributes-title">امکانات <i class="icon icon-caret-left"></i></span>
+                        <span class="products-soon-attributes-value">فاقد درايو نوري Webcam Backlit Keyboard Card Reader Wi-Fi Thunderbolt Port </span>
+                    </li>
+                    <li>
+                        <span class="products-soon-attributes-title">سایر مشخصات <i class="icon icon-caret-left"></i></span>
+                        <span class="products-soon-attributes-value">- باتری  6 سلولي - Apple Mac OS </span>
+                    </li>
+                                )
+
+                            [sort] => Array
+                                (
+                                    [0] => 2
+                                    [1] => 41450000
+                                    [2] => 2587
+                                )
+
+                        )
+
+                )
+
+        )
+
+)
