@@ -108,100 +108,54 @@ class publish extends Command
     public function handle()
     {
 
-        $brands = [
-            'apple' => 10,
-            'asus' => 4,
-            'lenovo' => 94,
-            'hp' => 6,
-            'acer' => 3,
-            'msi' => 95,
-            'vio' => 188,
-            'microsoft' => 51,
-            'dell' => 2
-        ];
 
-        $telegram = new Api();
+        $date = cache('date', 0);
+        if($date != date('Y/m/d')) {
 
-        foreach ($brands as $brand => $code) {
+            cache(['date' => date('Y/m/d')], Carbon::now()->addYears(1));
 
-            $list = file_get_contents("https://search.digikala.com/api/search/?category=c18&brand={$code}&pageSize=48&sortBy=10&status=2");
-            $list = mb_convert_encoding($list, 'HTML-ENTITIES', "UTF-8");
-            $list = json_decode($list, 1);
+            $brands = [
+                'apple' => 10,
+                'asus' => 4,
+                'lenovo' => 94,
+                'hp' => 6,
+                'acer' => 3,
+                'msi' => 95,
+                'vio' => 188,
+                'microsoft' => 51,
+                'dell' => 2
+            ];
 
-            $logo_sent = false;
-            foreach ($list['hits']['hits'] as $item) {
+            $telegram = new Api();
 
-                /*if(!$logo_sent){
-                    $telegram->sendPhoto([
-                        'chat_id' => "-1001103329085",
-                        'photo' => "http://136.243.158.61/brands/{$brand}.png",
-                        'caption' => "💻لیست قیمت لپتاپ های برند {$brand}"
-                    ]);
-                    $logo_sent = true;
-                }*/
+            foreach ($brands as $brand => $code) {
 
-                $telegram->sendMessage([
-                    'chat_id' => "-1001103329085",
-                    'text' => $this->extract_message($item),
-                    'parse_mode' => 'HTML'
-                ]);
-            }
+                $list = file_get_contents("https://search.digikala.com/api/search/?category=c18&brand={$code}&pageSize=48&sortBy=10&status=2");
+                $list = mb_convert_encoding($list, 'HTML-ENTITIES', "UTF-8");
+                $list = json_decode($list, 1);
 
-        }
+                $logo_sent = false;
+                foreach ($list['hits']['hits'] as $item) {
 
-
-
-
-
-       /*
-       ['_source']['DetailSource']
-       $counter = 0;
-        $lastvideos = cache('lastvideos', []);
-        $new_videos = [];
-
-
-        $crawler->filter('.video-item__thumb')->each(function ($node) use ($client, $telegram, &$counter, $lastvideos, &$new_videos) {
-            if($counter < 5) {
-                $href = $node->attr('href');
-                $href_arr = explode('/', $href);
-                if(count($href_arr) > 4) {
-                    if ($href_arr[3] == 'v') {
-                        if (!in_array($href_arr[4], $lastvideos)) {
-                            try {
-                                $this->info('=====================');
-
-                                $crawler2 = $client->request('GET', $href);
-                                $link = $crawler2->filter('.download-link > a')->first();
-
-                                $video = explode('?', $link->attr('href'));
-                                $video = $video[0];
-
-                                $this->info('title: ' . $node->attr('title'));
-                                $this->info('link: ' . $video);
-
-
-                                $this->info('publishing message ...');
-                                $telegram->sendVideo([
-                                    'chat_id' => env('CHANNEL'),
-                                    'video' => $video,
-                                    'caption' => $node->attr('title') . "\n\n📽 " . env('CHANNEL')
-                                ]);
-
-                                $this->info('done');
-
-                                $new_videos[] = $href_arr[4];
-                                cache(['lastvideos' => $new_videos], Carbon::now()->addYears(1));
-                                $counter++;
-                            } catch (\Exception $e) {
-                                $this->warn($e->getMessage());
-                            }
-                        }
+                    if (!$logo_sent) {
+                        $telegram->sendPhoto([
+                            'chat_id' => "-1001103329085",
+                            'photo' => "http://136.243.158.61/brands/{$brand}.png",
+                            'caption' => "💻لیست قیمت لپتاپ های برند {$brand}"
+                        ]);
+                        $logo_sent = true;
                     }
+
+                    $telegram->sendMessage([
+                        'chat_id' => "-1001103329085",
+                        'text' => $this->extract_message($item),
+                        'parse_mode' => 'HTML'
+                    ]);
                 }
+
+                sleep(60);
+
             }
-        });*/
-
-
-
+        }
     }
 }
