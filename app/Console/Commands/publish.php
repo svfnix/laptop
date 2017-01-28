@@ -151,9 +151,9 @@ class publish extends Command
                         'text' => $this->extract_message($item),
                         'parse_mode' => 'HTML'
                     ]);
-                }
 
-                sleep(60);
+                    sleep(10);
+                }
 
             }
         }
