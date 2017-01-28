@@ -131,22 +131,20 @@ class publish extends Command
             $logo_sent = false;
             foreach ($list['hits']['hits'] as $item) {
 
-                if(!$logo_sent){
+                /*if(!$logo_sent){
                     $telegram->sendPhoto([
                         'chat_id' => "-1001103329085",
                         'photo' => "http://136.243.158.61/brands/{$brand}.png",
                         'caption' => "💻لیست قیمت لپتاپ های برند {$brand}"
                     ]);
                     $logo_sent = true;
-                }
+                }*/
 
                 $telegram->sendMessage([
                     'chat_id' => "-1001103329085",
                     'text' => $this->extract_message($item),
                     'parse_mode' => 'HTML'
                 ]);
-
-                die();
             }
 
         }
